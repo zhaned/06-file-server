@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('../lib/app');
 
 describe('app routes', () => {
-  it('gets the / route and returns hi', async() => {
+  it('gets the /index.html route and returns hi', async() => {
     const body = await request(app)
       .get('/index.html');
 
