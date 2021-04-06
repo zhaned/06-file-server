@@ -6,7 +6,7 @@ describe('app routes', () => {
     const body = await request(app)
       .get('/index.html');
 
-    expect(body.text).toEqual('hi');
+    expect(body.text).toEqual('<h1>hi</h1>');
   });
 
   it('returns error 404', async() => {
